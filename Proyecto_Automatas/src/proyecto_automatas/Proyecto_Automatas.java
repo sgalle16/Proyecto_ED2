@@ -21,6 +21,7 @@ public class Proyecto_Automatas {
    public int q3=3;
    public int q4=4;
    public int q5=5;
+   public int qe="Error!!!";
    
    // estado actual
    public int actual;
@@ -32,6 +33,15 @@ public class Proyecto_Automatas {
         case 0:
             switch(c)
             {
+                case 'A'=q2;
+                    break;
+                case 'E'=q5;
+                    break;
+                case 'I'=qe;
+                    break;
+                case 'O'=qe;
+                    break;
+                case 'U'=q5;
                 
                 
             }
