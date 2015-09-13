@@ -33,19 +33,19 @@ public class Proyecto_Automatas {
         case 0:
             switch(c)
             {
-                case 'A'=q2;
+                case 'A':q2;
                     break;
-                case 'E'=q5;
+                case 'E':q5;
                     break;
-                case 'I'=qe;
+                case 'I':qe;
                     break;
-                case 'O'=qe;
+                case 'O':qe;
                     break;
-                case 'U'=q5;
-                
-                
+                case 'U':q5;
+                    break;
+                default: //reporta error;
+                    break;
             }
     }
-   
    }
 }
