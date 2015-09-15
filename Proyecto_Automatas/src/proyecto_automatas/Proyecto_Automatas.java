@@ -7,7 +7,7 @@ package proyecto_automatas;
 
 /**
  *
- * @author ACER
+ * @author Shaan
  */
 public class Proyecto_Automatas {
 
@@ -21,30 +21,38 @@ public class Proyecto_Automatas {
    public int q3=3;
    public int q4=4;
    public int q5=5;
-   public int qe="Error!!!";
+   public int qe=-1;
    
    // estado actual
-   public int actual;
+   public int actual=q0;
    
    public int delta(int s, char c)
    {
+       int r;
     switch(s)
     {
-        case 0:
+        case q0:
             switch(c)
             {
-                case 'A':q2;
+                case 'A': r = q2;
                     break;
-                case 'E':q5;
+                case 'E': r = q5;
                     break;
-                case 'I':qe;
+                case 'I': r = qe;
                     break;
-                case 'O':qe;
+                case 'O': r = qe;
                     break;
-                case 'U':q5;
+                case 'U': r = q5;
                     break;
                 default: //reporta error;
+                    
                     break;
+            }
+            break; // end q0
+        case q1:
+            switch(c)
+            {
+                
             }
     }
    }
