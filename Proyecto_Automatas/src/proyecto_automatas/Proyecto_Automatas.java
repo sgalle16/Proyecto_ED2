@@ -28,120 +28,122 @@ public class Proyecto_Automatas {
    
    public int delta(int s, char c)//'s' Estado de la Q
    {
-       int r;//Resultado
-    switch(s)
-    {
-        case q0:
-            switch(c)
-            {
-                case 'A': r = q2;
-                    break;
-                case 'E': r = q5;
-                    break;
-                case 'I': r = qe;
-                    break;
-                case 'O': r = qe;
-                    break;
-                case 'U': r = q5;
-                    break;
-                default: //reporta error;
+        int r;//Resultado
+        switch(s)
+        {
+            case q0:
+                switch(c)
+                {
+                    case 'A': r = q2;
+                        break;
+                    case 'E': r = q5;
+                        break;
+                    case 'I': r = qe;
+                        break;
+                    case 'O': r = qe;
+                        break;
+                    case 'U': r = q5;
+                        break;
+                    default: //reporta error;
                     
-                    break;
-            }
+                        break;
+                }
             break; // end q0
         
-        case q1:
-            switch(c)
-            {
-                case 'A': r = q1;
-                    break;
-                case 'E': r = q0;
-                    break;
-                case 'I': r =qe;
-                    break;
-                case 'O': r =qe;
-                    break;
-                case 'U': r =qe;
-                    break;
-                default: //reporta error;
+            case q1:
+                switch(c)
+                {
+                    case 'A': r = q1;
+                        break;
+                    case 'E': r = q0;
+                        break;
+                    case 'I': r =qe;
+                        break;
+                    case 'O': r =qe;
+                        break;
+                    case 'U': r =qe;
+                        break;
+                    default: //reporta error;
                     
-                    break;
-            }
-            break; // end q1  
+                        break;
+                }
+                break; // end q1  
         
-        case q2:
-            switch(c)
-            {
-                case 'A': r = qe;
-                    break;
-                case 'E': r = q0;
-                    break;
-                case 'I': r =q0;
-                    break;
-                case 'O': r =qe;
-                    break;
-                case 'U': r =qe;
-                    break;
-                default: r = qe//reporta error;
+            case q2:
+                switch(c)
+                {
+                    case 'A': r = qe;
+                        break;
+                    case 'E': r = q0;
+                        break;
+                    case 'I': r =q0;
+                        break;
+                    case 'O': r =qe;
+                        break;
+                    case 'U': r =qe;
+                        break;
+                    default: r = qe//reporta error;
                     
-                    break;    
+                        break;    
                 
-            }
-            break; // Termina estado 
-        case q3:
-            switch(c)
-            {
-                case 'A': r = q1;
-                    break;
-                case 'E': r = qe;
-                    break;
-                case 'I': r =qe;
-                    break;
-                case 'O': r =q1;
-                    break;
-                case 'U': r =qe;
-                    break;
-                default: r = qe//reporta error;
+                }
+                break; // Termina estado 
+            case q3:
+                switch(c)
+                {
+                    case 'A': r = q1;
+                        break;
+                    case 'E': r = qe;
+                        break;
+                    case 'I': r =qe;
+                        break;
+                    case 'O': r =q1;
+                        break;
+                    case 'U': r =qe;
+                        break;
+                    default: r = qe//reporta error;
                     
-                    break;    // Termina estado q3
-            }
+                        break;    // Termina estado q3
+                }
         
-        case q4:
-            switch(c)
-            {
-                case 'A': r = qe;
-                    break;
-                case 'E': r = qe;
-                    break;
-                case 'I': r =qe;
-                    break;
-                case 'O': r =qe;
-                    break;
-                case 'U': r =q3;
-                    break;
-                default: r = qe//reporta error;
+            case q4:
+                switch(c)
+                {
+                    case 'A': r = qe;
+                        break;
+                    case 'E': r = qe;
+                        break;
+                    case 'I': r =qe;
+                        break;
+                    case 'O': r =qe;
+                        break;
+                    case 'U': r =q3;
+                        break;
+                    default: r = qe//reporta error;
                     
-                    break;    // Termina estado q4
-            }
+                        break;    // Termina estado q4
+                }
             
-        case  q5:
-            switch(c)
-            {
-                case 'A': r = q4;
-                    break;
-                case 'E': r = qe;
-                    break;
-                case 'I': r = q4;
-                    break;
-                case 'O': r =qe;
-                    break;
-                case 'U': r =qe;
-                    break;
-                default: r = qe//reporta error;
+            case  q5:
+                switch(c)
+                {
+                    case 'A': r = q4;
+                        break;
+                    case 'E': r = qe;
+                        break;
+                    case 'I': r = q4;
+                        break;
+                    case 'O': r = qe;
+                        break;
+                    case 'U': r = qe;
+                        break;
+                    default: r = qe; //reporta error;
                     
-                    break;    // Termina estado q5
-            }
-    }
+                        break;    // Termina estado q5
+                }
+                default: r = qe;
+        }
+        return r;
   }
   
   
