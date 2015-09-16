@@ -68,6 +68,85 @@ public class Proyecto_Automatas {
                     break;
             }
             break; // end q1  
-       }
+        
+        case q2:
+            switch(c)
+            {
+                case 'A': r = qe;
+                    break;
+                case 'E': r = q0;
+                    break;
+                case 'I': r =q0;
+                    break;
+                case 'O': r =qe;
+                    break;
+                case 'U': r =qe;
+                    break;
+                default: r = qe//reporta error;
+                    
+                    break;    
+                
+            }
+            break; // Termina estado 
+        case q3:
+            switch(c)
+            {
+                case 'A': r = q1;
+                    break;
+                case 'E': r = qe;
+                    break;
+                case 'I': r =qe;
+                    break;
+                case 'O': r =q1;
+                    break;
+                case 'U': r =qe;
+                    break;
+                default: r = qe//reporta error;
+                    
+                    break;    // Termina estado q3
+            }
+        
+        case q4:
+            switch(c)
+            {
+                case 'A': r = qe;
+                    break;
+                case 'E': r = qe;
+                    break;
+                case 'I': r =qe;
+                    break;
+                case 'O': r =qe;
+                    break;
+                case 'U': r =q3;
+                    break;
+                default: r = qe//reporta error;
+                    
+                    break;    // Termina estado q4
+            }
+            
+        case  q5:
+            switch(c)
+            {
+                case 'A': r = q4;
+                    break;
+                case 'E': r = qe;
+                    break;
+                case 'I': r = q4;
+                    break;
+                case 'O': r =qe;
+                    break;
+                case 'U': r =qe;
+                    break;
+                default: r = qe//reporta error;
+                    
+                    break;    // Termina estado q5
+            }
     }
+  }
+  
+  
+  
+  
+  
+  
 }
