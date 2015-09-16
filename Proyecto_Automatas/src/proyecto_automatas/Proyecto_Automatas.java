@@ -49,11 +49,9 @@ public class Proyecto_Automatas {
                     break;
             }
             break; // end q0
+        
         case q1:
             switch(c)
-            {
-                case q1:
-                    switch(c)
             {
                 case 'A': r = q1;
                     break;
@@ -69,8 +67,7 @@ public class Proyecto_Automatas {
                     
                     break;
             }
-            break; // end q0  
-            }
+            break; // end q1  
+       }
     }
-   }
 }
