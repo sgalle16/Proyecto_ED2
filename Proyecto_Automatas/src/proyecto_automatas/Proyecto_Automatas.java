@@ -141,8 +141,12 @@ public class Proyecto_Automatas {
                     
                         break;    // Termina estado q5
                 }
-                default: r = qe;
-        }
+                break;
+                
+            default: r = qe;
+                break;
+            
+         }
         return r;
   }
   
