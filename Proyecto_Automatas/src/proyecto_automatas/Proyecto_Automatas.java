@@ -26,9 +26,9 @@ public class Proyecto_Automatas {
    // estado actual
    public int actual=q0;
    
-   public int delta(int s, char c)
+   public int delta(int s, char c)//'s' Estado de la Q
    {
-       int r;
+       int r;//Resultado
     switch(s)
     {
         case q0:
@@ -52,7 +52,24 @@ public class Proyecto_Automatas {
         case q1:
             switch(c)
             {
-                
+                case q1:
+                    switch(c)
+            {
+                case 'A': r = q1;
+                    break;
+                case 'E': r = q0;
+                    break;
+                case 'I': r =qe;
+                    break;
+                case 'O': r =qe;
+                    break;
+                case 'U': r =qe;
+                    break;
+                default: //reporta error;
+                    
+                    break;
+            }
+            break; // end q0  
             }
     }
    }
