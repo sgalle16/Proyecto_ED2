@@ -24,7 +24,7 @@ public class Proyecto_Automatas {
    public int qe=-1;
    
    // estado actual
-   public int state=q0;
+   public int actual=q0;
    
    public int delta(int s, char c)//'s' Estado de la Q
    {
@@ -155,6 +155,17 @@ public class Proyecto_Automatas {
        actual = q0;
    }
   
+  public void process(String e)
+  {
+   for(int i =0;i<e.length();i++)
+   {
+    actual=Auto.delta(actual,e.char(i));
+   }
+  }
   
+  public boolean accepted()
+  {
+   return actual==q5; 
+  }
   
 }
