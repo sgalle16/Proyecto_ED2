@@ -27,6 +27,8 @@ public interface Auto {
      * Examina si el DFA aceptó la cadena.
      * @return true si el estado final fue de aceptación
      */
-    
+     
     public abstract boolean accepted();
+    
+    public abstract process (string in);
 }
