@@ -7,7 +7,7 @@ package proyecto_automatas;
 
 /**
  *
- * @author ACER
+ * @author Shaan
  */
 public class MainAutomata {
     
