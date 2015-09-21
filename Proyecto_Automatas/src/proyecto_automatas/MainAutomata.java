@@ -9,10 +9,42 @@ package proyecto_automatas;
  *
  * @author Shaan
  */
-public class MainAutomata {
-    
-     public static void main(String[] args) {
-        // TODO code application logic here
+/**
+ * MainAuotNumPunFlo
+ *
+ * Punto de entrada para el autómata AutoNumPunFloj.
+ *
+ * Creación: 25/08/2011.
+ * Autor:    fcardona
+ * email:    fcardona@eafit.edu.co
+ *
+ * Registro de modificación:
+ *
+ * 01/03/2012 - Arreglando la identación y algunos cambios menores.
+ *
+ */
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+/**
+ * Una aplicación Java para demostrar el comportamiento de la clase AutoNumPunFlo
+ * siendo utilizado como filtro que procesa la entrada estándar y muestra aquellas
+ * lineas que aceptadas por AutoNumPunFlo en la salida estándar.
+ */
+
+public class MainAutoNumPunFlo {
+
+    public static void main(String [] args)
+            throws IOException {
+
+        Automata auto = new AutoNumPunFlo(); // El DFA
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        // Lea y haga echo de las líneas hasta EOF
+        System.out.println("Escriba una línea de valores e imprimalos");
+        String x = in.readLine();
+
+        
     }
-    
 }
