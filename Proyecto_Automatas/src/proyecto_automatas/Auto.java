@@ -21,14 +21,17 @@ public interface Auto {
      * dada.
      * @param in una cadena de entrada con los datos.
      */
-    //public abstract void process(String in);
 
     /**
      * Examina si el DFA aceptó la cadena.
      * @return true si el estado final fue de aceptación
      */
-     
     public abstract boolean accepted();
     
-    public abstract process (string in);
+    /**
+     * Realiza una transición en cada carácter en la cadena
+     * dada.
+     * @param e una cadena de entrada con los datos.
+     */
+    public abstract process (String e);
 }
