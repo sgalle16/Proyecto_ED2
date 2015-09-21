@@ -24,7 +24,7 @@ public class Proyecto_Automatas {
    public int qe=-1;
    
    // estado actual
-   public int actual=q0;
+   public int state=q0;
    
    public int delta(int s, char c)//'s' Estado de la Q
    {
@@ -148,10 +148,12 @@ public class Proyecto_Automatas {
             
          }
         return r;
-  }
-  
-  
-  
+   }
+   
+   public void reset() 
+   {
+       actual = q0;
+   }
   
   
   
