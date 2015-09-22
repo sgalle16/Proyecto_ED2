@@ -55,6 +55,7 @@ public class MainAutomata {
                 System.out.println("El caracter ingresado es valido!!!");
             else
                 System.err.printl("El caracter ingresado es invalido!!!");
+	    x=in.readLine();
         }        
                 
         
