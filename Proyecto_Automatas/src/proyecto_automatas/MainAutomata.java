@@ -33,17 +33,17 @@ import java.io.IOException;
  * lineas que aceptadas por AutoNumPunFlo en la salida estándar.
  */
 
-public class MainAutoNumPunFlo {
+public class MainAutomata {
 
     public static void main(String [] args)
             throws IOException {
 
-        Auto automata = new Auto(); // El DFA
+        Auto automata = new Proyecto_Automatas(); // El DFA
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
         // Lea y haga echo de las líneas hasta EOF
         System.out.println("Ingrese un caracter valido de las vocales");
-        System.out.prinntln(" A E I O U ");
+        System.out.println(" A E I O U ");
         String x = in.readLine();
         while(x!=null)
         {
@@ -56,7 +56,7 @@ public class MainAutoNumPunFlo {
             else
                 System.err.printl("El caracter ingresado es invalido!!!");
         }        
-
+                
         
     }
 }
