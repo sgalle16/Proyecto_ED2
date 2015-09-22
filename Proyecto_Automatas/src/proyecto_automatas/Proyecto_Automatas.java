@@ -15,18 +15,18 @@ public class Proyecto_Automatas {
      * @param args the command line arguments
      */
    // inicializacion de estados Q={q0,q1,q2,q3,q4,q5}   
-   public int q0=0;
-   public int q1=1;
-   public int q2=2;
-   public int q3=3;
-   public int q4=4;
-   public int q5=5;
-   public int qe=-1;
+   private static final int q0=0;
+   private static final int q1=1;
+   private static final int q2=2;
+   private static final int q3=3;
+   private static final int q4=4;
+   private static final int q5=5;
+   private static final int qe=-1;
    
    // estado actual
-   public int actual=q0;
+   private static final int actual=q0;
    
-   static public int delta(int s, char c)//'s' Estado de la Q
+   static private int delta(int s, char c)//'s' Estado de la Q
    {
         int r;//Resultado
         switch(s)
@@ -166,6 +166,6 @@ public class Proyecto_Automatas {
   public boolean accepted()
   {
    return actual==q5; 
-  }
+  }                                                                                                                                                                                                                             
   
 }
