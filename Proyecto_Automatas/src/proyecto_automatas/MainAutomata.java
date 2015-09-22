@@ -38,12 +38,24 @@ public class MainAutoNumPunFlo {
     public static void main(String [] args)
             throws IOException {
 
-        Automata auto = new AutoNumPunFlo(); // El DFA
+        Auto automata = new Auto(); // El DFA
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
         // Lea y haga echo de las líneas hasta EOF
-        System.out.println("Ingrese un caractes valido de las vocales");
+        System.out.println("Ingrese un caracter valido de las vocales");
+        System.out.prinntln(" A E I O U ");
         String x = in.readLine();
+        while(x!=null)
+        {
+            automata.reset();//Resetea El Automata al estado inicial
+            automata.process(x);
+            
+            if(automata.accepted())
+            
+                System.out.println("El caracter ingresado es valido!!!");
+            else
+                System.err.printl("El caracter ingresado es invalido!!!");
+        }        
 
         
     }
