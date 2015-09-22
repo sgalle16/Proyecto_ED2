@@ -42,7 +42,7 @@ public class MainAutoNumPunFlo {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
         // Lea y haga echo de las líneas hasta EOF
-        System.out.println("Escriba una línea de valores e imprimalos");
+        System.out.println("Ingrese un caractes valido de las vocales");
         String x = in.readLine();
 
         
