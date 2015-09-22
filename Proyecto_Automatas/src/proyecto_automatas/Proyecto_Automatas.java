@@ -26,7 +26,7 @@ public class Proyecto_Automatas {
    // estado actual
    public int actual=q0;
    
-   public int delta(int s, char c)//'s' Estado de la Q
+   static public int delta(int s, char c)//'s' Estado de la Q
    {
         int r;//Resultado
         switch(s)
@@ -159,7 +159,7 @@ public class Proyecto_Automatas {
   {
    for(int i =0;i<e.length();i++)
    {
-    actual=Auto.delta(actual,e.char(i));
+    actual=Proyecto_Automatas.delta(actual,e.char(i));
    }
   }
   
