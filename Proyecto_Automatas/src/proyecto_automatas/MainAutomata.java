@@ -50,7 +50,7 @@ public class MainAutomata {
             automata.reset();//Resetea El Automata al estado inicial
             automata.process(x);
             
-            if(automata.accepted())
+            if(automata.accepted())//Verifica si el estado actual es aceptado
             
                 System.out.println("El caracter ingresado es valido!!!");
             else
