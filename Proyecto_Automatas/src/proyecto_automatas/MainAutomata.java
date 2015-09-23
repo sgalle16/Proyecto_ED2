@@ -47,18 +47,19 @@ public class MainAutomata {
         String x = in.readLine();
         String a = x.toUpperCase();
         
-        do{
+        while(x!=null){
             automata.reset();//Resetea El Automata al estado inicial
             automata.process(x);
-            
+           
             if(automata.accepted()){//Verifica si el estado actual es aceptado
             	
                 System.out.println("El caracter ingresado es válido!!!");
-            }else
+            }else{
                 System.err.println("El caracter ingresado es inválido!!!");
-                x = in.readLine();
-                x.toUpperCase();
-        } while(x!=null);       
-                
+            }
+                System.out.println("Ingrese las vocales");                     
+                x = in.readLine();//Leer variable
+                x.toUpperCase();//Convierte a mayuscula
+        }                      
     }
-}
+} 
