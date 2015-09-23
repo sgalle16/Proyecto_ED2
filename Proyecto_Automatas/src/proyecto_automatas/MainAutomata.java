@@ -58,8 +58,8 @@ public class MainAutomata {
                 System.err.println("El caracter ingresado es inválido!!!");
             }
                 System.out.println("Ingrese las vocales");                     
-                x = in.readLine();//Leer variable
-                x.toUpperCase();//Convierte a mayuscula
+                x = in.readLine();//Leer variables
+                x.toUpperCase();//Convierte a mayusculas
         }                      
     }
 } 
