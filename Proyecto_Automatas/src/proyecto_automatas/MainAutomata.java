@@ -38,27 +38,27 @@ public class MainAutomata {
     public static void main(String [] args)
             throws IOException {
 
-        Auto automata = new Proyecto_Automatas(); // El DFA
+        Proyecto_Automatas automata = new Proyecto_Automatas(); // El DFA
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
         // Lea y haga echo de las líneas hasta EOF
         System.out.println("Ingrese las vocales");
         System.out.println(" A E I O U ");
         String x = in.readLine();
-        String a = x.yoUpperCase();
+        String a = x.toUpperCase();
         
         do{
             automata.reset();//Resetea El Automata al estado inicial
             automata.process(x);
             
             if(automata.accepted()){//Verifica si el estado actual es aceptado
-            	automata.imprimir();
+            	
                 System.out.println("El caracter ingresado es válido!!!");
             }else
-                System.err.printl("El caracter ingresado es inválido!!!");
+                System.err.println("El caracter ingresado es inválido!!!");
                 x = in.readLine();
                 x.toUpperCase();
-        } while(x!=null)       
+        } while(x!=null);       
                 
     }
 }

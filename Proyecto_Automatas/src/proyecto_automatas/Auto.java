@@ -33,5 +33,5 @@ public interface Auto {
      * dada.
      * @param e una cadena de entrada con los datos.
      */
-    public abstract process (String e);
+    public abstract void process (String e);
 }

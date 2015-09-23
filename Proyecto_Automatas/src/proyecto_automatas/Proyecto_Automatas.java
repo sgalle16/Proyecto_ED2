@@ -9,7 +9,7 @@ package proyecto_automatas;
  *
  * @author Shaan
  */
-public class Proyecto_Automatas {
+public class Proyecto_Automatas implements Auto {
 
     /**
      * @param args the command line arguments
@@ -24,11 +24,11 @@ public class Proyecto_Automatas {
    private static final int qe=-1;
    
    // estado actual
-   private static final int actual=q0;
+   private static int actual=q0;
    
    static private int delta(int s, char c)//'s' Estado de la Q
    {
-        int r;//Resultado
+        int r=0;//Resultado
         switch(s)
         {
             case q0:
@@ -82,7 +82,7 @@ public class Proyecto_Automatas {
                         break;
                     case 'U': r =qe;
                         break;
-                    default: r = qe//reporta error;
+                    default: r = qe;//reporta error;
                     
                         break;    
                 
@@ -101,7 +101,7 @@ public class Proyecto_Automatas {
                         break;
                     case 'U': r =qe;
                         break;
-                    default: r = qe//reporta error;
+                    default: r = qe;//reporta error;
                     
                         break;    // Termina estado q3
                 }
@@ -119,7 +119,7 @@ public class Proyecto_Automatas {
                         break;
                     case 'U': r =q3;
                         break;
-                    default: r = qe//reporta error;
+                    default: r = qe;//reporta error;
                     
                         break;    // Termina estado q4
                 }
@@ -159,7 +159,7 @@ public class Proyecto_Automatas {
   {
    for(int i =0;i<e.length();i++)
    {
-    actual=Proyecto_Automatas.delta(actual,e.char(i));
+    actual=Proyecto_Automatas.delta(actual,e.charAt(i));
    }
   }
   
