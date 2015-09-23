@@ -42,22 +42,23 @@ public class MainAutomata {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
         // Lea y haga echo de las líneas hasta EOF
-        System.out.println("Ingrese un caracter valido de las vocales");
+        System.out.println("Ingrese las vocales");
         System.out.println(" A E I O U ");
         String x = in.readLine();
-        while(x!=null)
-        {
+        String a = x.yoUpperCase();
+        
+        do{
             automata.reset();//Resetea El Automata al estado inicial
             automata.process(x);
             
-            if(automata.accepted())//Verifica si el estado actual es aceptado
-            
-                System.out.println("El caracter ingresado es valido!!!");
-            else
-                System.err.printl("El caracter ingresado es invalido!!!");
-	    x=in.readLine();
-        }        
+            if(automata.accepted()){//Verifica si el estado actual es aceptado
+            	automata.imprimir();
+                System.out.println("El caracter ingresado es válido!!!");
+            }else
+                System.err.printl("El caracter ingresado es inválido!!!");
+                x = in.readLine();
+                x.toUpperCase();
+        } while(x!=null)       
                 
-        
     }
 }
