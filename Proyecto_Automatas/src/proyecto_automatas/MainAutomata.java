@@ -59,7 +59,7 @@ public class MainAutomata {
             }
                 System.out.println("Ingrese las vocales");                     
                 x = in.readLine();//Leer variables
-                x.toUpperCase();//Convierte a mayusculas
+                x.toUpperCase();//Convierte a mayusculasss
         }                      
     }
 } 
